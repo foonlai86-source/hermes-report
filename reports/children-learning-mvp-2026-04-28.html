@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>5個老師家長最想要的兒童學習小程式 MVP</title>
+  <style>
+    :root{--bg:#0b1020;--card:#151b2f;--card2:#10172a;--text:#edf2ff;--muted:#aeb9d4;--line:#293452;--accent:#7dd3fc;--good:#86efac;--warn:#fde68a;--pink:#f0abfc}
+    *{box-sizing:border-box} body{margin:0;background:linear-gradient(180deg,#08111f,#101827 50%,#0b1020);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans TC",Arial,sans-serif;color:var(--text);line-height:1.65}
+    .wrap{max-width:860px;margin:0 auto;padding:24px 16px 56px}.hero{padding:28px 18px;border:1px solid var(--line);border-radius:24px;background:radial-gradient(circle at top left,rgba(125,211,252,.2),transparent 35%),var(--card)}
+    h1{font-size:30px;line-height:1.2;margin:0 0 12px} h2{font-size:22px;margin:30px 0 12px} h3{font-size:18px;margin:0 0 8px}.meta{color:var(--muted);font-size:14px}.summary{font-size:18px;margin:14px 0 0}.grid{display:grid;gap:14px}.card{border:1px solid var(--line);background:rgba(21,27,47,.9);border-radius:20px;padding:18px}.rank{display:inline-flex;align-items:center;gap:8px;color:#07111f;background:var(--accent);font-weight:800;border-radius:999px;padding:4px 10px;font-size:13px;margin-bottom:10px}.tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:2px 9px;color:var(--muted);font-size:12px;margin:4px 4px 0 0}.score{color:var(--good);font-weight:700}.why{color:var(--warn);font-weight:700}.small{font-size:14px;color:var(--muted)}ul{padding-left:20px;margin:8px 0}li{margin:5px 0}.table{overflow-x:auto}.row{display:grid;grid-template-columns:1.2fr .8fr .8fr .8fr;gap:8px;border-bottom:1px solid var(--line);padding:10px 0}.row.head{color:var(--accent);font-weight:800}.src a{color:var(--accent)}.callout{border-left:4px solid var(--pink);padding:12px 14px;background:rgba(240,171,252,.08);border-radius:12px}.footer{margin-top:34px;color:var(--muted);font-size:13px}
+    @media(max-width:650px){h1{font-size:25px}.row{grid-template-columns:1fr}.hero{padding:22px 16px}.card{padding:16px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="meta">Hermes Report · 2026-04-28 · 兒童學習小程式 MVP 測試報告</div>
+      <h1>5個老師和家長最想要的兒童學習小程式 MVP</h1>
+      <p class="summary"><strong>結論：</strong>最值得先做的不是「又一個遊戲學習 App」，而是 <strong>幫老師節省時間、幫家長知道每天應該怎樣陪孩子學10分鐘</strong> 的小工具。</p>
+    </section>
+
+    <h2>快速排序</h2>
+    <div class="table card">
+      <div class="row head"><div>MVP</div><div>需求強度</div><div>付費可能</div><div>先做建議</div></div>
+      <div class="row"><div>1. 10分鐘家庭學習橋</div><div>很高</div><div>學校/家長</div><div>第一優先</div></div>
+      <div class="row"><div>2. AI閱讀陪練 + 老師預警</div><div>很高</div><div>家長</div><div>第二優先</div></div>
+      <div class="row"><div>3. 數學卡關診斷器</div><div>高</div><div>家長/補習</div><div>可做</div></div>
+      <div class="row"><div>4. Homework Rescue</div><div>高</div><div>家長</div><div>可做</div></div>
+      <div class="row"><div>5. SEND/EAL 圖像學習助手</div><div>中高</div><div>學校</div><div>利基但有價值</div></div>
+    </div>
+
+    <h2>1. 10分鐘家庭學習橋</h2>
+    <section class="card">
+      <div class="rank">Top Pick</div>
+      <h3>一句話</h3>
+      <p>老師每週設定3個微任務，家長每天只需跟孩子做10分鐘；系統自動收集完成情況、照片/語音證據，老師看一個簡單 dashboard。</p>
+      <p class="why">為什麼老師家長都想要：</p>
+      <ul>
+        <li>老師想提高 parental engagement，但不想多一個複雜平台。</li>
+        <li>家長最大問題不是不關心，而是不知道「今晚到底做什麼才有用」。</li>
+        <li>EEF 指 parental engagement 平均可帶來約 +4 個月進步，但 homework 型介入本身不一定有效；所以要做「具體的一對一親子任務」，不是普通功課提醒。</li>
+      </ul>
+      <p><strong>MVP 功能：</strong>老師任務模板庫、家長 WhatsApp/email link、完成打卡、相片/語音上傳、班級 engagement dashboard。</p>
+      <p><strong>最小收費：</strong>學校 £5–£15/月/班；或家長 £3.99/月。</p>
+      <span class="tag">Primary</span><span class="tag">Parent engagement</span><span class="tag">低開發難度</span>
+    </section>
+
+    <h2>2. AI 閱讀陪練 + 老師預警</h2>
+    <section class="card">
+      <div class="rank">High Demand</div>
+      <h3>一句話</h3>
+      <p>孩子每日朗讀30–60秒，AI 給家長簡單建議；老師只看「誰一週沒有讀、誰需要支援」。</p>
+      <p class="why">需求邏輯：</p>
+      <ul>
+        <li>Reading log 是英國小學非常常見的家庭學習場景。</li>
+        <li>Learning with Parents 的教師調查提到 Digital Reading Log、home-read tally、tracking engagement 是老師真正在意的功能。</li>
+        <li>家長會願意付費，因為閱讀是最容易被感知為「影響成績」的能力。</li>
+      </ul>
+      <p><strong>MVP 功能：</strong>每日朗讀錄音、AI 粗略判斷流暢度/停頓、不做醫療/診斷聲稱、家長提示、老師每週 risk list。</p>
+      <p><strong>避免陷阱：</strong>不要一開始做完整 phonics curriculum；先做「記錄 + 提醒 + 預警」。</p>
+      <span class="tag">Reading</span><span class="tag">家長付費較強</span><span class="tag">可做訂閱</span>
+    </section>
+
+    <h2>3. 數學卡關診斷器</h2>
+    <section class="card">
+      <div class="rank">Math Pain</div>
+      <h3>一句話</h3>
+      <p>家長拍下孩子做錯的數學題，系統不是直接給答案，而是判斷卡在哪個概念：位值、進位、分數、時間、形狀、量度等，再給3分鐘補救小練習。</p>
+      <p class="why">需求邏輯：</p>
+      <ul>
+        <li>家長常常「想幫但不懂現在學校教法」。</li>
+        <li>老師不想再逐個解釋同一種錯誤。</li>
+        <li>教師調查中也出現對更多 maths topics 的需求，如 time、shape、measure。</li>
+      </ul>
+      <p><strong>MVP 功能：</strong>拍照/OCR、錯誤類型分類、家長版解釋、3題 mini practice、老師可看到全班高頻 misconception。</p>
+      <p><strong>收費：</strong>家長 £4.99/月；學校可按班級訂閱。</p>
+      <span class="tag">Maths</span><span class="tag">Misconception</span><span class="tag">AI-assisted</span>
+    </section>
+
+    <h2>4. Homework Rescue：家長不再吵架版功課助手</h2>
+    <section class="card">
+      <div class="rank">Parent Pain</div>
+      <h3>一句話</h3>
+      <p>孩子卡住功課時，家長輸入題目，系統用「引導問題」幫家長陪孩子想，而不是直接給答案。</p>
+      <p class="why">需求邏輯：</p>
+      <ul>
+        <li>BBC 引述跨國調查：只有約 11% UK parents 每天花超過1小時幫功課，但家長仍重視老師和孩子幸福感。</li>
+        <li>這代表產品應該降低家長陪伴摩擦，而不是要求家長投入大量時間。</li>
+        <li>定位可以是「減少親子功課衝突」，比單純「提高分數」更容易打動家長。</li>
+      </ul>
+      <p><strong>MVP 功能：</strong>題目輸入、三步提示、家長口吻版解釋、不要直接顯示答案、每日最多3次免費。</p>
+      <p><strong>風險：</strong>如果做成普通 ChatGPT wrapper，價值很低；必須聚焦 UK primary homework 方法。</p>
+      <span class="tag">Homework</span><span class="tag">Parent-child conflict</span><span class="tag">B2C</span>
+    </section>
+
+    <h2>5. SEND / EAL 圖像學習助手</h2>
+    <section class="card">
+      <div class="rank">Niche Value</div>
+      <h3>一句話</h3>
+      <p>老師輸入今日課題，系統自動生成視覺詞彙卡、簡化句子、家庭練習卡，給 SEND 或 EAL 孩子使用。</p>
+      <p class="why">需求邏輯：</p>
+      <ul>
+        <li>老師 workload 高，DfE/教育科技報告也把 accessibility、staff capability 和技術採用障礙列為重點。</li>
+        <li>SEND/EAL 資源準備很花時間，但學校有實際需求。</li>
+        <li>這個方向 B2B 較好，不一定適合直接賣給普通家長。</li>
+      </ul>
+      <p><strong>MVP 功能：</strong>課題 → 8張圖像詞卡、簡化閱讀版、家長家庭練習 PDF、一鍵列印。</p>
+      <p><strong>收費：</strong>先做 teacher/school plan，£9–£19/月/老師。</p>
+      <span class="tag">SEND</span><span class="tag">EAL</span><span class="tag">Teacher workload</span>
+    </section>
+
+    <h2>我的建議：先做哪一個？</h2>
+    <section class="callout">
+      <p><strong>先做 #1「10分鐘家庭學習橋」。</strong></p>
+      <p>原因：它同時打中老師和家長，而且 MVP 不需要複雜 AI。第一版可以只是模板 + 家長打卡 + 老師 dashboard。只要證明老師省時間、家長更清楚每日做什麼，就有商業價值。</p>
+    </section>
+
+    <h2>7天 MVP 測試方案</h2>
+    <section class="card">
+      <ul>
+        <li><strong>Day 1:</strong> 做 landing page：一句話「每日10分鐘，幫孩子完成老師真正想要的家庭學習」。</li>
+        <li><strong>Day 2:</strong> 建 20個任務模板：reading、phonics、maths、vocabulary。</li>
+        <li><strong>Day 3:</strong> 用 Google Form / Airtable 做家長打卡。</li>
+        <li><strong>Day 4:</strong> 做老師 dashboard mockup。</li>
+        <li><strong>Day 5:</strong> 找5位老師/家長訪談。</li>
+        <li><strong>Day 6:</strong> 用 Lovart/Figma 做3張手機畫面。</li>
+        <li><strong>Day 7:</strong> 測試預售：£3.99/月家長版或學校 pilot。</li>
+      </ul>
+    </section>
+
+    <h2>資料來源</h2>
+    <section class="card src small">
+      <ul>
+        <li><a href="https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/parental-engagement">EEF Teaching and Learning Toolkit: Parental engagement</a> — +4 months average progress, 124 studies, high evidence security.</li>
+        <li><a href="https://educationendowmentfoundation.org.uk/news/texting-parents-about-tests-and-homework-can-improve-maths-results-and-redu">EEF: Texting parents about homework/tests</a> — low-cost parent prompts improved maths by around one month in trial.</li>
+        <li><a href="https://assets.publishing.service.gov.uk/media/692834a6ce50d215cae9610e/Technology_in_schools_survey_2024_to_2025_research_report.pdf">DfE Technology in Schools Survey 2024–2025</a> — school technology use, workload, barriers, AI and accessibility context.</li>
+        <li><a href="https://learningwithparents.com/blog/2025/10/14/2025-survey-what-teachers-say-about-learning-with-parents/">Learning with Parents 2025 teacher survey</a> — reading log usability, tracking engagement, maths topic requests.</li>
+        <li><a href="https://www.sec-ed.co.uk/content/news/teacher-leader-workload-report-2025">SecEd summary of DfE Working Lives 2025</a> — teachers around 50.1 hrs/week, workload/stress context.</li>
+        <li><a href="https://www.bbc.com/news/education-43316741">BBC: UK parents help less with homework</a> — UK parent homework-time context.</li>
+      </ul>
+    </section>
+
+    <div class="footer">Prepared by 軍師 · For Alfred · GitHub Pages mobile report test</div>
+  </main>
+</body>
+</html>
