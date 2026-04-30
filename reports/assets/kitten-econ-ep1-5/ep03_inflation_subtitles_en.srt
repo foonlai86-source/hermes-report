@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:20,000
+Kitten Economics Episode 3: Inflation.
+
+2
+00:00:20,000 --> 00:00:45,000
+Welcome back. Today we learn one core economics idea with kittens.
+
+3
+00:00:45,000 --> 00:01:15,000
+In Kitty Town, fish tokens are used to buy snacks.
+
+4
+00:01:15,000 --> 00:01:45,000
+At first, one token buys one fish treat. Then more tokens are printed while fish supply stays limited.
+
+5
+00:01:45,000 --> 00:02:10,000
+Soon, one token buys only half a treat. That is inflation: prices rise because money grows faster than goods.
+
+6
+00:02:10,000 --> 00:02:35,000
+Recap: Inflation. Use this rule in real decisions. Comment: More Kitten Economics.
